@@ -387,6 +387,18 @@ body {
 
 /* NAV */
 .nav { display: flex; align-items: center; gap: 16px; }
+.nav-fs {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.8);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px; font-weight: 500;
+  padding: 7px 12px; border-radius: 6px;
+  cursor: pointer; transition: background .15s;
+  display: flex; align-items: center; gap: 6px;
+}
+.nav-fs:hover { background: rgba(255,255,255,.13); }
+.nav-fs svg { width: 13px; height: 13px; stroke: rgba(255,255,255,.8); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .nav-btn {
   background: rgba(255,255,255,.07);
   border: 1px solid rgba(255,255,255,.12);
@@ -423,9 +435,9 @@ body {
     <span>Departamento Administrativo de Planeación · Valle del Cauca</span>
   </div>
   <div class="cover-eyebrow">Infraestructura de Datos Espaciales y Estadísticas del Valle del Cauca</div>
-  <h1 class="cover-title">Visor Geográfico<br>Institucional del<br><em>Valle del Cauca</em></h1>
+  <h1 class="cover-title">Infraestructura Geoespacial<br>Institucional del<br><em>Valle del Cauca</em></h1>
   <div class="cover-sep"></div>
-  <p class="cover-sub">Solución de infraestructura geoespacial desarrollada desde la Infraestructura de Datos Espaciales y Estadísticas del Valle del Cauca como alternativa institucional a los licenciamientos privativos de software GIS.</p>
+  <p class="cover-sub">Infraestructura geoespacial propia para que la Gobernación administre y publique su información territorial con autonomía institucional.</p>
   <div class="cover-footer">
     <p>Articulación institucional · Mayo 2025<br>Subdirección de Ordenamiento y Desarrollo Regional</p>
   </div>
@@ -438,8 +450,8 @@ body {
 <div class="slide s-split">
   <div class="split-l azul">
     <div class="label inv">El contexto</div>
-    <h2 class="h1 inv sm">Un problema real de soberanía tecnológica</h2>
-    <p class="body inv" style="margin-top:9px;">Las dependencias de la Gobernación dependen de licencias privativas de software GIS para operar su información territorial. Eso tiene consecuencias concretas.</p>
+    <h2 class="h1 inv sm">Dependencia tecnológica en la gestión territorial</h2>
+    <p class="body inv" style="margin-top:9px;">El modelo actual de gestión geoespacial limita la capacidad de la Gobernación para operar su información territorial con autonomía. Eso tiene consecuencias institucionales concretas.</p>
   </div>
   <div class="split-r">
     <div class="rule"></div>
@@ -447,29 +459,29 @@ body {
       <li>
         <div class="cdot"><svg viewBox="0 0 10 10"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
         <div class="cbody">
-          <h5>Costo de licenciamiento recurrente y elevado</h5>
-          <p>El software GIS privativo implica renovación periódica de licencias con costos altos — recursos que salen del departamento cada año sin generar capacidad institucional propia.</p>
+          <h5>Costos recurrentes sin capacidad propia</h5>
+          <p>Recursos que salen del departamento cada año sin consolidar infraestructura ni talento institucional.</p>
         </div>
       </li>
       <li>
         <div class="cdot"><svg viewBox="0 0 10 10"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
         <div class="cbody">
-          <h5>Acceso limitado y dependiente del proveedor</h5>
-          <p>Ante licencias vencidas o no renovadas, la operación de análisis geoespacial queda paralizada. La continuidad del servicio depende de un tercero externo, no de la entidad.</p>
+          <h5>Continuidad supeditada a un tercero</h5>
+          <p>Licencias vencidas o no renovadas paralizan la operación. La entidad depende del proveedor, no de sí misma.</p>
         </div>
       </li>
       <li>
         <div class="cdot"><svg viewBox="0 0 10 10"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
         <div class="cbody">
-          <h5>Sin soberanía sobre los datos geoespaciales</h5>
-          <p>Los datos, capas y procesos cartográficos quedan vinculados a formatos y plataformas propietarias. Migrar o auditar la información resulta costoso y complejo.</p>
+          <h5>Datos atados a formatos propietarios</h5>
+          <p>Auditar, migrar o reutilizar la información cartográfica resulta costoso y técnicamente complejo.</p>
         </div>
       </li>
       <li>
         <div class="cdot"><svg viewBox="0 0 10 10"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
         <div class="cbody">
-          <h5>Usuarios restringidos por número de licencias</h5>
-          <p>Solo los funcionarios con licencia asignada pueden operar las herramientas. El conocimiento territorial queda concentrado en pocos perfiles técnicos.</p>
+          <h5>Acceso restringido a pocos perfiles</h5>
+          <p>El conocimiento territorial queda concentrado en quienes tienen licencia, no disponible para toda la Gobernación.</p>
         </div>
       </li>
     </ul>
@@ -486,34 +498,34 @@ body {
       <div class="label">La solución</div>
       <h2 class="h1 sm" style="margin-bottom:0;">Una plataforma geográfica institucional propia</h2>
     </div>
-    <div style="font-size:10px;color:var(--gris-m);text-align:right;line-height:1.6;">Desarrollada desde el DAP<br>Valle del Cauca</div>
+    <div style="font-size:10px;color:var(--gris-m);text-align:right;line-height:1.6;">Desarrollada por la IDEE<br>Valle del Cauca</div>
   </div>
-  <p class="body" style="max-width:680px;margin-bottom:0;">Desde el Departamento Administrativo de Planeación se está construyendo una plataforma de visualización e integración de información geoespacial que elimina la dependencia de licencias privativas y pone la capacidad territorial en manos de la Gobernación.</p>
+  <p class="body" style="max-width:680px;margin-bottom:0;">Plataforma de visualización e integración geoespacial que pone la capacidad territorial en manos de la Gobernación — sin dependencia de licencias externas.</p>
   <div class="cards3" style="margin-top:20px;">
     <div class="card azul-l">
       <div class="c-ico azul">
         <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
       </div>
       <h4>Visor web interactivo</h4>
-      <p>Acceso desde cualquier navegador, sin instalación de software. Visualización de capas geoespaciales en tiempo real para cualquier funcionario autorizado de la Gobernación.</p>
+      <p>Acceso desde cualquier navegador, sin instalación de software ni licencias.</p>
     </div>
     <div class="card verde-l">
       <div class="c-ico verde">
         <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4"/><path d="M2 12c0 4 4.5 8 10 8s10-4 10-8"/><path d="M2 12c0-4 4.5-8 10-8s10 4 10 8"/></svg>
       </div>
-      <h4>Servidor de datos geoespaciales propio</h4>
-      <p>Infraestructura de publicación de capas bajo estándares abiertos internacionales (OGC). Los datos son del departamento, administrados por el departamento.</p>
+      <h4>Servidor de datos propio</h4>
+      <p>Publicación de capas bajo estándares abiertos OGC. Los datos son del departamento.</p>
     </div>
     <div class="card off">
       <div class="c-ico oro">
         <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
       </div>
-      <h4>Base de datos geográfica PostGIS</h4>
-      <p>Infraestructura de almacenamiento espacial basada en estándares abiertos para gestionar, consultar y analizar información geográfica institucional de forma centralizada.</p>
+      <h4>Base de datos PostGIS</h4>
+      <p>Almacenamiento espacial centralizado basado en estándares abiertos internacionales.</p>
     </div>
   </div>
   <div class="hbox-verde" style="margin-top:18px;">
-    <p><strong>Base técnica:</strong> la plataforma se apoya en una base de datos espacial, un servidor de mapas conforme a estándares OGC y un cliente web moderno — todos bajo software libre con respaldo comunitario global. La inversión se queda en el territorio: infraestructura y talento humano departamental.</p>
+    <p>Toda la infraestructura bajo <strong>software libre</strong> — la inversión se queda en el territorio: infraestructura y talento humano departamental.</p>
   </div>
   <div class="sn">3 / 6</div>
 </div>
@@ -534,22 +546,22 @@ body {
       <li>
         <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
         <div class="cbody">
-          <h5>ICDE — Infraestructura Colombiana de Datos Espaciales (IGAC)</h5>
-          <p>La plataforma adopta principios de interoperabilidad geoespacial promovidos por la ICDE mediante el uso de estándares abiertos y servicios geográficos interoperables</p>
+          <h5>ICDE — Infraestructura Colombiana de Datos Espaciales</h5>
+          <p>La información del Valle puede integrarse con los sistemas territoriales del orden nacional sin adaptaciones especiales.</p>
         </div>
       </li>
       <li>
         <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
         <div class="cbody">
           <h5>OGC — Servicios estándar WMS / WFS</h5>
-          <p>Los servicios de mapas y datos siguen las especificaciones del Open Geospatial Consortium, adoptadas por la ICDE como estándar nacional — interoperables con cualquier sistema de información territorial del Estado.</p>
+          <p>La información territorial puede integrarse, reutilizarse e intercambiarse con cualquier entidad del Estado sin depender de plataformas específicas.</p>
         </div>
       </li>
       <li>
         <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
         <div class="cbody">
           <h5>ISO 19115 — Metadatos geográficos</h5>
-          <p>Estándar adoptado por la ICDE para documentar productos de datos geoespaciales. La plataforma implementa servicios de metadatos interoperables que facilitan la trazabilidad, descripción e intercambio de capas geográficas.</p>
+          <p>Cada capa es trazable, documentada y auditable — requisito para su uso en decisiones de política pública.</p>
         </div>
       </li>
     </ul>
@@ -566,7 +578,7 @@ body {
   <div style="text-align:center;margin-bottom:26px;">
     <div class="label" style="justify-content:center;display:flex;">Valor institucional</div>
     <h2 class="h1" style="font-size:26px;margin-bottom:8px;">Información territorial disponible<br>en el momento que se necesita</h2>
-    <p class="body" style="max-width:560px;margin:0 auto;color:var(--gris-m);">La pregunta no es si el territorio importa — sino cuánto tarda en estar disponible cuando se necesita.</p>
+    <p class="body" style="max-width:560px;margin:0 auto;color:var(--gris-m);">La información territorial genera valor cuando está disponible en el momento necesario.</p>
   </div>
 
   <!-- Fila de 3 cards -->
@@ -609,7 +621,7 @@ body {
   <div class="slide-header">
     <div class="sh-left">
       <div class="label">Estado actual</div>
-      <h2 class="h1 sm" style="margin-bottom:0;">Información geográfica del POTD ya disponible en el visor</h2>
+      <h2 class="h1 sm" style="margin-bottom:0;">Geodatabase del POTD ya disponible en la plataforma institucional</h2>
     </div>
     <div style="display:flex;align-items:center;gap:6px;">
       <span style="width:7px;height:7px;border-radius:50%;background:var(--verde);display:inline-block;"></span>
@@ -618,27 +630,27 @@ body {
   </div>
   <div class="two-col">
     <div>
-      <p class="body" style="margin-bottom:14px;">La plataforma publica y visualiza la geodatabase oficial del <strong style="color:var(--azul);">POTD Valle del Cauca</strong>, adoptado mediante Ordenanza 513 de 2019, estructurada en torno al Modelo de Ordenamiento Territorial (MOT).</p>
+      <p class="body" style="margin-bottom:14px;">La plataforma publica la geodatabase oficial del <strong style="color:var(--azul);">POTD Valle del Cauca</strong> (Ordenanza 513 de 2019), estructurada en torno al Modelo de Ordenamiento Territorial.</p>
       <ul class="clist">
         <li>
           <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
           <div class="cbody">
             <h5>Cartografía base</h5>
-            <p>Asentamientos, curvas de nivel, cuerpos de agua, drenajes, límites político-administrativos, subregiones, toponimia, islas y archipiélagos.</p>
+            <p>Asentamientos, cuerpos de agua, límites político-administrativos, subregiones y toponimia.</p>
           </div>
         </li>
         <li>
           <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
           <div class="cbody">
             <h5>Estructura propuesta</h5>
-            <p>Base Natural, Sistema Funcional de Movilidad, Equipamientos y Servicios Públicos — los sistemas de soporte y estructura del departamento.</p>
+            <p>Base Natural, Movilidad, Equipamientos y Servicios Públicos del departamento.</p>
           </div>
         </li>
         <li>
           <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
           <div class="cbody">
             <h5>Ocupación propuesta</h5>
-            <p>Asentamientos urbanos y rurales, zonas de producción, territorios étnicos y campesinos — las formas de ocupación departamental.</p>
+            <p>Asentamientos urbanos y rurales, zonas de producción y territorios étnicos.</p>
           </div>
         </li>
       </ul>
@@ -649,33 +661,26 @@ body {
           <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
           <div class="cbody">
             <h5>Modelo de Ordenamiento Territorial (MOTD)</h5>
-            <p>Decisiones territoriales estratégicas: visión del territorio y grandes apuestas para la potenciación, transformación o preservación territorial.</p>
+            <p>Visión y grandes apuestas para la potenciación, transformación o preservación del territorio.</p>
           </div>
         </li>
         <li>
           <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
           <div class="cbody">
             <h5>Ejes focales y activos patrimoniales</h5>
-            <p>Activos territoriales patrimoniales del Valle y territorios prioritarios para la inserción de políticas de paz y posconflicto.</p>
+            <p>Territorios patrimoniales y prioritarios para políticas de paz y posconflicto.</p>
           </div>
         </li>
         <li>
           <div class="cdot"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></div>
           <div class="cbody">
             <h5>Riesgo y programas estratégicos</h5>
-            <p>Amenazas y riesgos evaluados a escala departamental (OSSO) y proyectos sectoriales y estratégicos para el desarrollo territorial.</p>
+            <p>Amenazas evaluadas a escala departamental y proyectos para el desarrollo territorial.</p>
           </div>
         </li>
       </ul>
       <div class="hbox-verde" style="margin-top:16px;">
-        <p>Toda esta información, que soporta los planos normativos del POTD, está hoy disponible en el visor institucional — accesible desde cualquier navegador, sin software propietario instalado.
-			<br><br>
-			<strong>Acceso al visor:</strong>
-			<a href="https://idee-valle-visor-gis.vercel.app/" target="_blank" rel="noopener noreferrer">
-			  idee-valle-visor-gis.vercel.app
-			</a>
-		
-		</p>
+        <p>Disponible hoy desde cualquier navegador, sin software propietario.<br><strong>Acceso:</strong> <a href="https://idee-valle-visor-gis.vercel.app/" target="_blank" rel="noopener noreferrer">idee-valle-visor-gis.vercel.app</a></p>
       </div>
     </div>
   </div>
@@ -690,6 +695,10 @@ body {
   <div class="nav-dots" id="dots"></div>
   <span class="counter" id="ctr">1 / 6</span>
   <button class="nav-btn" id="btnN">Siguiente →</button>
+  <button class="nav-fs" id="btnFS" title="Pantalla completa">
+    <svg id="fsIcon" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+    Pantalla completa
+  </button>
 </div>
 
 <script>
@@ -724,7 +733,32 @@ btnN.addEventListener('click',()=>{if(cur<tot-1)go(cur+1);});
 document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight'||e.key==='ArrowDown')btnN.click();
   if(e.key==='ArrowLeft' ||e.key==='ArrowUp')  btnP.click();
+  if(e.key==='f'||e.key==='F') btnFS.click();
+  if(e.key==='Escape') { /* browser handles exit */ }
 });
+
+const btnFS = document.getElementById('btnFS');
+const fsIcon = document.getElementById('fsIcon');
+const deck = document.querySelector('.deck');
+
+const iconExpand = `<path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>`;
+const iconCollapse = `<path d="M8 3v5H3"/><path d="M21 8h-5V3"/><path d="M3 16h5v5"/><path d="M16 21v-5h5"/>`;
+
+function updateFsButton() {
+  const isFs = !!document.fullscreenElement;
+  fsIcon.innerHTML = isFs ? iconCollapse : iconExpand;
+  btnFS.childNodes[btnFS.childNodes.length - 1].textContent = isFs ? ' Salir' : ' Pantalla completa';
+}
+
+btnFS.addEventListener('click', () => {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+});
+
+document.addEventListener('fullscreenchange', updateFsButton);
 </script>
 
 </body>
